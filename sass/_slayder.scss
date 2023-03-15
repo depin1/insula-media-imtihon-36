@@ -1,0 +1,86 @@
+.carousel-item {
+    min-height: 489px;
+    max-width: 800px;
+    background-color: #ffffff;
+    position: relative;
+    padding: 48px 0 0 40px;
+}
+
+.carousel-control-prev-icon {
+    position: absolute;
+    left: 4px;
+    top: 230px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #000000;
+}
+
+.carousel-control-next-icon {
+    position: absolute;
+    right: 4px;
+    top: 230px;
+}
+
+.title_bootsrap {
+    margin: 0 auto;
+    padding-left: 140px;
+}
+
+.span_bootsrap {
+    margin: 0 auto;
+    padding-left: 140px;
+    margin-top: 15px;
+}
+
+.p_bootsrap {
+    text-align: start;
+    margin-top: 80px;
+}
+
+.image2_bootsrap {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.image_bootsrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.slider_show {
+    background-color: #F0F0F0;
+    padding: 80px 0 150px 0;
+}
+
+.image_bootsrap {
+    max-width: 160px;
+}
+
+@media (max-width:576px) {
+    .p_bootsrap {
+        margin-top: 20px;
+    }
+    .image_bootsrap {
+        max-width: 118px;
+    }
+    .title_bootsrap {
+        padding-left: 110px;
+    }
+    .span_bootsrap {
+        padding-left: 0px;
+    }
+    .carousel-item {
+        padding: 48px 0 0 19px;
+    }
+}
+
+.slayder_menu {
+    padding: 60px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}

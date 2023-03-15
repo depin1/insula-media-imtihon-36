@@ -1,0 +1,106 @@
+.section_ceter {
+    background: #161A2B;
+    padding: 80px 0;
+    .center_title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+    .box__lef-chilled {
+        height: 166px;
+        width: 212px;
+        position: relative;
+        padding: 5px 0 0 18px;
+    }
+    .title_center,
+    .title_center2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+    .span2 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+    .pushbtn {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        background-color: transparent;
+        border: none;
+        color: #FFFFFF;
+        display: block;
+    }
+    .imagepush {
+        width: 8px;
+        margin-left: 4px;
+    }
+    .center__box-left,
+    .center__box-right {
+        margin-top: 50px;
+    }
+    .line3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 104px;
+        width: 2px;
+        background-color: #EE1B24;
+    }
+}
+
+.section__center-box {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.center__box-left {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.center__box-right {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+@media (max-width:930px) {
+    .section__center-box {
+        flex-direction: column;
+        row-gap: 56px;
+    }
+    .center__box-left {
+        display: flex;
+        column-gap: 120px;
+    }
+    .center__box-right {
+        display: flex;
+        column-gap: 120px;
+    }
+}
+
+@media (max-width:576px) {
+    .box__lef-chilled {
+        display: flex;
+        flex-direction: column;
+    }
+    .center__box-left {
+        flex-direction: column;
+        row-gap: 32px;
+    }
+    .center__box-right {
+        flex-direction: column;
+        row-gap: 32px;
+    }
+    .section__center-box {
+        row-gap: 0;
+        align-items: start;
+    }
+}

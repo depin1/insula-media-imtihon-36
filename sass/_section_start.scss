@@ -1,0 +1,130 @@
+.section__box_left {
+    padding: 80px 0 128px 0;
+    max-width: 720px;
+}
+
+.box__left_chilled {
+    max-width: 432px;
+}
+
+.section_start {
+    background-color: #161A2B;
+}
+
+.menu_section li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.menu_section {
+    padding-top: 24px;
+}
+
+.section_text {
+    padding-top: 48px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #ffffff9b;
+}
+
+.section_title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.section__box_right {
+    background-image: url(../images/bagroundsection.png);
+    background-size: cover;
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // padding: 75px 120px 75px 168px;
+}
+
+.section_start {
+    display: flex;
+}
+
+.min_box_section {
+    width: 208px;
+    height: 208px;
+    background-color: #161A2B;
+    position: relative;
+    padding: 64px 0 0 34px;
+}
+
+.box__right_chilled {
+    display: flex;
+    column-gap: 16px;
+}
+
+.box__right_chilled2 {
+    margin-top: 16px;
+    display: flex;
+    column-gap: 16px;
+}
+
+.line2 {
+    position: absolute;
+    top: 0;
+    left: 24px;
+    height: 104px;
+    width: 2px;
+    background-color: #EE1B24;
+}
+
+.title_mini_section {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.text_mini_section {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+@media (max-width:786px) {
+    .box__right_chilled,
+    .box__right_chilled2 {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+    .section__box_right {
+        padding: 40px 0;
+        background-position: left;
+        width: 60%;
+    }
+    .section__box_left {
+        max-width: 488px;
+        padding: 144px 0 201px 0;
+    }
+}
+
+@media (max-width:576px) {
+    .section_start {
+        flex-direction: column;
+    }
+    .section__box_right {
+        width: 100%;
+    }
+    .title_mini_section {
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+    .min_box_section {
+        padding: 30px 0 0 42px;
+    }
+}

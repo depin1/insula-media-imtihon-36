@@ -1,0 +1,238 @@
+.header_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__box_right {
+    display: flex;
+    align-items: center;
+    column-gap: 86px;
+}
+
+.min_box {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.menu_item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+}
+
+.min_box_media {
+    display: none;
+}
+
+.image1 {
+    border: none;
+    background-color: transparent;
+}
+
+.text_content {
+    text-decoration-line: underline;
+}
+
+.line {
+    background-color: aliceblue;
+    padding: 12px 0;
+}
+
+.end__box_left {
+    max-width: 628px;
+}
+
+.text_content:hover {
+    color: rgb(0, 102, 255);
+}
+
+.header_end {
+    display: flex;
+    margin-top: 88px;
+    align-items: center;
+    margin-bottom: 119px;
+    justify-content: space-between;
+}
+
+.header_title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.header_text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+
+.button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    color: #ffffff;
+    border: 1px solid red;
+    background-color: #ff0000;
+    padding: 10px 15px;
+    margin-right: 40px;
+    transition: .4s;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid black;
+}
+
+.button2:hover {
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.button2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000000;
+    border: 1px solid black;
+    background-color: #ffffff;
+    padding: 10px 45px;
+    transition: .4s;
+}
+
+.bb {
+    display: flex;
+}
+
+.image_book2 {
+    display: none;
+}
+
+@media (max-width:786px) {
+    .min_box_media {
+        display: block;
+    }
+    .min_box_media {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+    }
+    .header__box_right {
+        transform: translateY(-300px);
+        position: absolute;
+        right: 20px;
+        top: 62px;
+    }
+    .header__box_right.active {
+        width: 208px;
+        height: 115px;
+        border: 1px solid;
+        flex-direction: column;
+        row-gap: 17px;
+        align-items: baseline;
+        padding: 7px 0 0 21px;
+        transform: translateY(0);
+        transition: .3s;
+        background-color: aliceblue;
+    }
+    .img1 {
+        transition: .5s;
+    }
+    .img1.active {
+        transform: rotate(180deg);
+    }
+    .icon {
+        width: 24px;
+        height: 18px;
+    }
+    .image_book,
+    .image_book2 {
+        max-width: 232px;
+    }
+    .end__box_left {
+        max-width: 424px;
+    }
+    .header_title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+    }
+    .header_text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+    }
+    .button,
+    .button2 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 130%;
+    }
+    .bb {
+        margin: 0 auto;
+    }
+    .insul {
+        max-width: 134px;
+    }
+}
+
+@media (max-width:641px) {
+    .header_end {
+        text-align: center;
+        flex-direction: column;
+    }
+    .header_title {
+        margin-bottom: 24px;
+    }
+    .image_book2 {
+        display: block;
+    }
+    .image_book {
+        display: none;
+    }
+    .image_book,
+    .image_book2 {
+        max-width: 176px;
+        margin: 0 auto;
+    }
+    .end__box_left {
+        min-width: 272px;
+    }
+    .bb {
+        justify-content: center;
+    }
+    .button,
+    .button2 {
+        font-size: 11px;
+    }
+    .insul {
+        max-width: 56px;
+    }
+    .image1 {
+        margin-top: -10px;
+    }
+    .header_box {
+        display: flex;
+        align-items: initial;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:641px) {
+    .button,
+    .button2 {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:890px) {
+    .button {
+        margin-right: 10px;
+    }
+}
