@@ -89,12 +89,14 @@
   background-color: #ffffff;
   color: black;
   border: 1px solid black;
+  transform: scale(1.1);
 }
 
 .button2:hover {
   background-color: #ff0000;
   color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 0, 0);
+  transform: scale(1.1);
 }
 
 .button2 {
@@ -545,7 +547,8 @@
   border-radius: 5px;
 }
 
-.formBtn {
+.formBtn,
+.formBtn2 {
   background-color: #161A2B;
   color: #FFFFFF;
   font-weight: 700;
@@ -556,6 +559,21 @@
   padding: 5px 10px;
   border: 1px solid red;
   margin-top: 50px;
+  transition: 0.3s;
+}
+
+.formBtn2:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+  transform: scale(1.1);
+  border: 1px solid black;
+}
+
+.formBtn:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+  transform: scale(1.1);
+  border: 1px solid black;
 }
 
 .title_input {
@@ -576,6 +594,37 @@
   width: 100%;
   line-height: 130%;
   padding: 10px 5px;
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.inpu:nth-child(1) {
+  display: block;
+  background-color: transparent;
+  border: none;
+  font-weight: 400;
+  margin-top: 70px;
+  font-size: 18px;
+  margin-bottom: 64px;
+  width: 100%;
+  line-height: 130%;
+  padding: 10px 5px;
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid #FFFFFF;
+  outline: none;
+}
+
+.inpu:nth-child(2) {
+  display: block;
+  background-color: transparent;
+  border: none;
+  font-weight: 400;
+  margin-top: 70px;
+  font-size: 18px;
+  width: 100%;
+  line-height: 130%;
+  padding: 10px 5px;
+  outline: none;
   color: rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid #FFFFFF;
 }
@@ -640,6 +689,7 @@
   position: absolute;
   bottom: 20px;
   right: 20px;
+  transition: 0.3s;
 }
 
 .remove_btn2 {
@@ -650,12 +700,27 @@
   position: absolute;
   bottom: 10px;
   right: 20px;
+  transition: 0.3s;
+}
+
+.remove_btn2:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
+  transform: scale(1.1);
+}
+
+.remove_btn:hover {
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid rgb(68, 0, 255);
+  transform: scale(1.1);
 }
 
 .mini_box {
   position: relative;
-  width: 450px;
-  height: 300px;
+  max-width: 450px;
+  min-height: 300px;
   background-color: #FFFFFF;
   padding: 50px 0 0 30px;
 }
@@ -679,11 +744,16 @@
 }
 
 @media (max-width: 786px) {
-  .formBtn {
+  .formBtn,
+  .formBtn2 {
     font-weight: 700;
     font-size: 12px;
     line-height: 130%;
     color: #FFFFFF;
+  }
+  .mini_box {
+    position: relative;
+    top: 410px;
   }
   .title_input {
     font-weight: 700;
